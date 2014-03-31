@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>nightfly19</title>
+		<description></description>
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Jekyll</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://github.com/liquidz/misaki&quot;&gt;Misaki&lt;/a&gt; proved too heavy to render on my 128Mb VPS. The little box just couldn’t handle two JVM processes required to render my blog and when I lowered the heap size enough that it could handle it Clojure no longer had enough memory to run. Jekyll is what Misaki was inspired by and seems to be capable of everything I want.&lt;/p&gt;</description>
+				<pubDate>Wed, 29 May 2013 00:00:00 +0000</pubDate>
+				<link>/blog/2013/05/29/jekyll.html</link>
+				<guid isPermaLink="true">/blog/2013/05/29/jekyll.html</guid>
+			</item>
+		
+			<item>
+				<title>Misaki</title>
+				<description>&lt;p&gt;After my friends success with it I’m trying out &lt;a href=&quot;https://github.com/liquidz/misaki&quot;&gt;Misaki&lt;/a&gt; for my professional/personal site. I tend to update rather infrequently and am running this on a rather stable but resource limited VPS, so a dynamic site is kinda overkill for my needs. Since Misaki just renders to flat files it will let me do tons of cool Clojure-y stuff to generate my content, but not require me to manage a Java virtual machine on a 128Mb system.&lt;/p&gt;
+
+&lt;p&gt;So far I’m reasonably pleased with it. I’ve spent doing the usual design stuff and learning the Misaki way. Misaki provides plenty of convenience functions for generating basic but otherwise long-to-type HTML/hiccup statements. Misaki provides an interesting and practical, if not entirely intuitive, method of generating and formatting content.&lt;/p&gt;
+
+&lt;p&gt;I really like how Misaki handles laying out content. Each page can specify a layout, and layouts can be composed in layers. A characteristic example of this is how each blog post specifies the ‘post’ layout, when the ‘post’ layout is finished it passes it’s content onto the ‘default’ layout. These layout names simply being conventions supplied with the sample blog, they can be changed and each page or post can be specified to use different ones.&lt;/p&gt;
+
+&lt;p&gt;I’m not overly fond of a lot of how a lot of things in Misaki feel like magic though. I’d much rather call functions to set the meta-data for pages then have it parse the initial comments in the file. And I really dispise how I can’t seem to control what gets loaded into the namespace. I’ve really grown to love LISP-y package systems and Clojure’s namespaces, and I feel like I’ve lost a lot of that control when working with Misaki.&lt;/p&gt;</description>
+				<pubDate>Mon, 14 Jan 2013 00:00:00 +0000</pubDate>
+				<link>/blog/2013/01/14/misaki.html</link>
+				<guid isPermaLink="true">/blog/2013/01/14/misaki.html</guid>
+			</item>
+		
+	</channel>
+</rss>

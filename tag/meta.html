@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/syntax.css" rel="stylesheet">
+    <link href="/css/sagenite.net.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">nightfly19</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            
+            <li><a href="/">Blog</a></li>
+            <li><a href="/about/">About Me</a></li>
+            <li><a href="http://github.com/nightfly19">Github</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <h1></h1>
+<h1> Posts Tagged meta </h1>
+
+
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>
+      <a href="/blog/2013/05/29/jekyll.html">Jekyll</a>
+      <br>
+      <small>29 May 2013</small>
+    </h3>
+
+  </div>
+  <div class="panel-body">
+    <p>
+      <p><a href="https://github.com/liquidz/misaki">Misaki</a> proved too heavy to render on my 128Mb VPS. The little box just couldn’t handle two JVM processes required to render my blog and when I lowered the heap size enough that it could handle it Clojure no longer had enough memory to run. Jekyll is what Misaki was inspired by and seems to be capable of everything I want.</p>
+    </p>
+  </div>
+  <div class="panel-footer">
+    <ul class="nav nav-pills">
+      
+      <li><a href="/tag/meta.html">meta</a></li>
+      
+      <li><a href="/tag/Ruby.html">Ruby</a></li>
+      
+      <li><a href="/tag/Jekyll.html">Jekyll</a></li>
+      
+      <li><a href="/tag/blogging.html">blogging</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>
+      <a href="/blog/2013/01/14/misaki.html">Misaki</a>
+      <br>
+      <small>14 Jan 2013</small>
+    </h3>
+
+  </div>
+  <div class="panel-body">
+    <p>
+      <p>After my friends success with it I’m trying out <a href="https://github.com/liquidz/misaki">Misaki</a> for my professional/personal site. I tend to update rather infrequently and am running this on a rather stable but resource limited VPS, so a dynamic site is kinda overkill for my needs. Since Misaki just renders to flat files it will let me do tons of cool Clojure-y stuff to generate my content, but not require me to manage a Java virtual machine on a 128Mb system.</p>
+
+<p>So far I’m reasonably pleased with it. I’ve spent doing the usual design stuff and learning the Misaki way. Misaki provides plenty of convenience functions for generating basic but otherwise long-to-type HTML/hiccup statements. Misaki provides an interesting and practical, if not entirely intuitive, method of generating and formatting content.</p>
+
+<p>I really like how Misaki handles laying out content. Each page can specify a layout, and layouts can be composed in layers. A characteristic example of this is how each blog post specifies the ‘post’ layout, when the ‘post’ layout is finished it passes it’s content onto the ‘default’ layout. These layout names simply being conventions supplied with the sample blog, they can be changed and each page or post can be specified to use different ones.</p>
+
+<p>I’m not overly fond of a lot of how a lot of things in Misaki feel like magic though. I’d much rather call functions to set the meta-data for pages then have it parse the initial comments in the file. And I really dispise how I can’t seem to control what gets loaded into the namespace. I’ve really grown to love LISP-y package systems and Clojure’s namespaces, and I feel like I’ve lost a lot of that control when working with Misaki.</p>
+    </p>
+  </div>
+  <div class="panel-footer">
+    <ul class="nav nav-pills">
+      
+      <li><a href="/tag/meta.html">meta</a></li>
+      
+      <li><a href="/tag/Clojure.html">Clojure</a></li>
+      
+      <li><a href="/tag/Misaki.html">Misaki</a></li>
+      
+      <li><a href="/tag/blogging.html">blogging</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-default" href="/blog/archive.html">All Blog Posts</a>
+
+
+
+      <hr>
+      &copy; Sage Imel
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+         ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
